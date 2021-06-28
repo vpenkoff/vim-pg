@@ -8,11 +8,6 @@ let s:save_cpo = &cpo
 set cpo&vim
 let s:_ = 1
 
-function! vim_pg#OpenPsql()
-  vsplit __psql_tmp__
-  setlocal buftype=nofile
-endfunction
-
 function! vim_pg#PsqlCommand()
   let result = PgExecSql()
   split __tmp__
