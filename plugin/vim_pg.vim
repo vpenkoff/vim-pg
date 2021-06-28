@@ -16,7 +16,7 @@ if !exists("g:psql_command")
   let g:psql_command = "psql"
 end
 
-vnoremap <unique> <leader>b :call vim_pg#PsqlCommand()<cr>
+command! -nargs=+ Psql call vim_pg#PsqlCommand(<f-args>)
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

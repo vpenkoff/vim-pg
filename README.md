@@ -1,7 +1,7 @@
 # vim-pg
 
 ### Intro
-**vim-pg** is simple wrapper around `psql` to execute SQL queries directly to PostgreSQL. 
+**vim-pg** is simple wrapper around `psql` to execute SQL queries directly to PostgreSQL in Vim. 
 ### Requirements
 * Vim8
 * [psql](https://www.postgresql.org/docs/10/app-psql.html) 
@@ -19,12 +19,8 @@ File: ~/.vimrc
 let g:VimPgDbHostname = "sql.example.com"
 ```
 ### Running
-![vim-pg](https://i.imgur.com/Bj6kvI3.png)
 1. Open Vim
-2. Press `<leader>B` - this will split your window in to two.
-3. Enter your query
-4. Mark your query with visual selection
-5. Press `<leader>b` to execute the query. The result will be shown in a new split.
+2. Type `:Psql select * from users`
 
 ### Contribute
 1. Fork the repo
